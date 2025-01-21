@@ -1,5 +1,6 @@
 - name: PING
-  hosts: web
+  hosts: 172.31.93.38
   tasks: # task=module=collection
   - name: ping the server
     ansible.builtin.ping:
+
