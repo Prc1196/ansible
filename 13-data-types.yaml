@@ -1,5 +1,5 @@
 - name: DevOps course information
-  host: local
+  hosts: local
   connection: loacl
   vars:
     course_name: "DevOps with AWS" # string
