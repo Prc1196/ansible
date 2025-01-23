@@ -1,7 +1,11 @@
 - name: variables
   hosts: local
   connection: local
+  vars:
+    COURSE: "DevOps with AWS"
+    DURATION: 120hrs
+    TRAINER: siva kumar reddy
   tasks: 
   - name: pirnt the variable
     ansible.builtin.debug:
-      msg: "course is DevOps with AWS, Duration 120hrs, Trainer is siva kumar reddy"
+      msg: "course is {{ COURSE }} , Duration {{ DURATION }}, Trainer is {{ TRAINER }}"
