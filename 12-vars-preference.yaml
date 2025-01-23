@@ -1,7 +1,7 @@
 - name: variables 
   hosts: local
   connection: local
-  vars: # play leevl variables
+  vars: # play level variables
     GREET: "PLAY"
   vars_files:
   - course.yaml
