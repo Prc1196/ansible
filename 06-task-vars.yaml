@@ -12,4 +12,7 @@
     ansible.builtin.debug:
       msg: "course is {{ COURSE }} , Duration {{ DURATION }}, Trainer is {{ TRAINER }}"
 
- 
+  - name: pirnt the variables1
+    vars:
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }} , Duration {{ DURATION }}, Trainer is {{ TRAINER }}"
