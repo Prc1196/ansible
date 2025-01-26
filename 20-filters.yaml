@@ -20,3 +20,12 @@
         trainer: siva kumar
     ansible.builtin.debug:
       msg: " cousre info: {{ course | dict2items }}"
+
+  - name: convert list into map
+    vars:
+      course:
+      - {'key': 'name', 'value': 'ansible'}
+      - {'key': 'duration', 'value': '10hrs'}
+      - {'key': 'trainer', 'value': 'siva kumar'}
+     ansible.builtin.debug:
+      msg: "course info: {{ course | items2dict }}" 
