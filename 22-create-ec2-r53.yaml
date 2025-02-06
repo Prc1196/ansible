@@ -42,7 +42,7 @@
     amazon.aws.route53:
       state: present
       zone: "{{ zone }}"
-      record: "{{ item.item }}.{{ zone }}"
+      record: "{{ item.item}}.{{ zone }}"
       type: A
       ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
@@ -52,7 +52,7 @@
 
 
   
-  - name: create private ip for frontend
+  - name: create pubilc ip for frontend
     amazon.aws.route53:
       state: present
       zone: "{{ zone }}"
