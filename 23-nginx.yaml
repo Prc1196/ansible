@@ -1,5 +1,5 @@
 - name: nginx install
-  hosts: ungrouped
+  hosts: all
   become: yes
   tasks:
   - name: Install nginx
